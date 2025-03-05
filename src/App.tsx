@@ -1,6 +1,6 @@
-import SideBar from "./sidebar";
-import Slider from "./Slider";
-import "./App.css"
+import SideBar from "./Sidebar";
+import Slider from "./Quests";
+import "./index.css"
 
 export default function ToDoList() {
   return (
