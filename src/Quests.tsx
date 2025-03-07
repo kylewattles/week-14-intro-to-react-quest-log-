@@ -9,7 +9,7 @@ export default function Quests() {
         <div id="questbody">
            
             
-            <Quest/>
+            <Quest quest="test"/>
         </div>
         </div>
     )
