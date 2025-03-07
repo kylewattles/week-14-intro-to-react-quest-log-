@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
-import ToDoList from './App.tsx'
+import Quests from './App.tsx'
 import "bootstrap/dist/css/bootstrap.min.css"
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <ToDoList />
+    <Quests />
   </StrictMode>,
 )

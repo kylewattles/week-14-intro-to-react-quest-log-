@@ -1,7 +1,8 @@
-
-
-export default function Quest() {
-  return <div className="border-end bg-light p-3">Quest <br />
-  <button className="btn btn-success shadow-lg">Collect Bounty</button>
-  </div>
+export default function Quest({ quest }: { quest: string }) {
+  return (
+    <div className="border-end bg-light p-3">
+      {quest} <br />
+      <button className="btn btn-success shadow-lg">Finish Quest</button>
+    </div>
+  );
 }

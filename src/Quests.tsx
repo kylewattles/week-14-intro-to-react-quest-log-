@@ -1,6 +1,6 @@
-import Quest from "./Quest";
+import Quest from "./Quest.tsx";
 
-export default function Slider() {
+export default function Quests() {
     return (
     <div className="flex-grow-1 d-flex flex-column">
         <div className="d-flex justify-content-center align-items-center bg-light">   
