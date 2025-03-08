@@ -1,11 +1,11 @@
-export default function Quest({ quest }: { quest: string }) {
-  function deleteQuest() {
-    console.log("clicky click")
-
-  }
+export default function Quest({ quest, deleteQuest }: { quest: string, deleteQuest: () => void }) {
+ 
   return (
     <div className="border-end bg-light p-3">
-      {quest} <br />
+      <div>
+      {quest}
+
+      </div>
       <button onClick={deleteQuest} className="btn btn-success shadow-lg">Finish Quest</button>
     </div>
   );

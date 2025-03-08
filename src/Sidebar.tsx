@@ -4,7 +4,8 @@ export default function SideBar({text, setQuest, quest}: {text:string}) {
     
     function handleSubmit(q: React.FormEvent<HTMLFormElement>){
         q.preventDefault();
-        setQuest(questText)
+        const updatedQuests = [...quest,questText];
+        setQuest(updatedQuests)
       
         
     }
@@ -19,7 +20,7 @@ export default function SideBar({text, setQuest, quest}: {text:string}) {
                     type="text" 
                     placeholder="what does the wizard ask of you, brave traveller?"
                     onChange={(q) => setQuestText(q.target.value)}
-                    value={quest}
+                    value={questText}
                     />
                 </div>
                 <button type="submit" className="btn btn-primary shadow-lg">{text}</button>
