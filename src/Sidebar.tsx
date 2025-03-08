@@ -6,6 +6,7 @@ export default function SideBar({text, setQuest, quest}: {text:string}) {
         q.preventDefault();
         const updatedQuests = [...quest,questText];
         setQuest(updatedQuests)
+        setQuestText("")
       
         
     }
