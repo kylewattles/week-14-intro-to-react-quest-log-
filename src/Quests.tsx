@@ -1,6 +1,6 @@
 import Quest from "./Quest.tsx";
 
-export default function Quests() {
+export default function Quests({questName}) {
     return (
     <div className="flex-grow-1 d-flex flex-column">
         <div className="d-flex justify-content-center align-items-center bg-light">   
@@ -9,7 +9,7 @@ export default function Quests() {
         <div id="questbody">
            
             
-            <Quest quest="test"/>
+            <Quest quest={questName}/>
         </div>
         </div>
     )
