@@ -1,6 +1,6 @@
 import {useState} from "react";
-export default function SideBar({text, setQuest, quest}: {text:string}) {
-   const [questText,setQuestText] = useState();
+export default function SideBar({text, setQuest, quest}: {text:string, quest: string[],  setQuest: (value: React.SetStateAction<string[]>) => void }) {
+   const [questText,setQuestText] = useState("");
     
     function handleSubmit(q: React.FormEvent<HTMLFormElement>){
         q.preventDefault();
@@ -11,7 +11,7 @@ export default function SideBar({text, setQuest, quest}: {text:string}) {
         
     }
     return (
-        <div className="border-end bg-light p-3">
+        <div id="sidebarbody" className="  p-3">
             <h2>What does the wizard request?</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">

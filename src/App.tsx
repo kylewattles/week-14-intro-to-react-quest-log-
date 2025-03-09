@@ -14,7 +14,7 @@ export default function QuestLog() {
     
     <div className="d-flex flex-column vh-100">
       <div className="d-flex flex-grow-1">
-    <SideBar text = {"Create Quest"} setQuest= {setQuest} quest={quest}/>
+    <SideBar text = {"Create Quest"} setQuest={setQuest} quest={quest}/>
     <Quests questName={quest} deleteQuest={deleteQuest}/>
     </div>
     </div>

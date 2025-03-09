@@ -1,0 +1,12 @@
+#sidebarbody{
+    background: linear-gradient(to bottom, green, teal );
+}
+
+#questlistbody{
+    background: linear-gradient(to bottom, teal, gray );
+
+}
+
+#questbody{
+    background: linear-gradient(to bottom, gray, teal );
+}

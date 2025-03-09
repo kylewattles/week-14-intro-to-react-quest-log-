@@ -7,7 +7,7 @@ const handleActiveQuest = () => {
   setIsActive(!isActive)
 }
   return (
-    <div className="border-end bg-light p-3">
+    <div id="questbody" className="border-end bg-light p-3">
       <div>
       {quest}
 
