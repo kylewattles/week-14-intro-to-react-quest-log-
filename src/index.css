@@ -10,3 +10,7 @@
 #questbody{
     background: linear-gradient(to bottom, gray, teal );
 }
+
+#questlogbody{
+    background: linear-gradient(to bottom, green, lime );
+}
