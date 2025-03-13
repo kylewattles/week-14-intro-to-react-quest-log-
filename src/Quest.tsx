@@ -13,7 +13,7 @@ const handleActiveQuest = () => {
 
       </div>
       <button onClick={deleteQuest} className="btn btn-success shadow-lg">Finish Quest</button>
-      <button onClick={handleActiveQuest} className={`btn ${isActive ? "btn-success" : "btn-secondary"}
+      <button onClick={handleActiveQuest} className={`btn ${isActive ? "btn-warning" : "btn-secondary"}
       {isActive ? "Inactive" : "Active}`}>set as active quest</button>
     </div>
   );
