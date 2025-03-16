@@ -14,3 +14,22 @@
 #questlogbody{
     background: linear-gradient(to right, green, lime );
 }
+.quest-text {
+    position: relative;
+    display: inline-block;
+}
+
+.quest-text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.3s ease;
+}
+
+.strikethrough::after {
+    width: 100%;
+}
